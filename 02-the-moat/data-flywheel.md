@@ -14,19 +14,27 @@
 
 ### Correction Loop - _3_/5
 **What you capture today:**
+Order errors, failed transactions, and support escalations are logged — but there is no structured feedback loop where user corrections improve product logic or surface better investment recommendations.
 **How it compounds:**
+Today it doesn't. If correction signals (e.g. customers abandoning T-Bill orders mid-flow, or retrying failed withdrawals) were fed back into UX prioritisation and product rules, each release cycle would be sharper than the last.
 
 ### Preference Loop - _2_/5
 **What you capture today:**
+The platform is largely stateless from a personalisation standpoint. we know a customer's holdings and transaction history, but we do not yet use that to shape their next interaction — product suggestions, risk nudges, or content sequencing.
 **How it compounds:**
+A customer who has rolled over three T-Bills should be auto-surfaced a T-Bill renewal prompt — not a blank discovery screen. Preference learning turns a transactional app into an advisory layer. Without it, every session starts from zero.
 
 ### Domain Context Loop - _4_/5
 **What you capture today:**
+We have a natural cross-domain data advantage: a customer's Capital activity (equities, T-Bills, CPs) sits within a Group that also includes Asset Management and Merchant Bank. The Unified Dashboard programme formalises this link.
 **How it compounds:**
+A customer's fixed income maturity on Capital can prompt an Asset Management fund suggestion. Merchant Bank salary flow can surface Capital investment prompts. Cross-subsidiary signal improves relevance across all three entities over time.
 
 ### Network Loop - _3_/5
 **What you capture today:**
+Network effects are currently weak. Each customer is independent — one investor joining does not improve the experience for another. There are no social, referral, or pooled-intelligence mechanisms in scope for Phase 1.
 **How it compounds:**
+Referral programmes, community portfolio benchmarks ("investors like you"), or pooled yield structures (e.g. money market accumulation) would turn individual users into nodes that generate value for the whole. A natural Phase 2 target.
 
 **Total Flywheel Score: _12_/20**
 **Weakest Loop:**
