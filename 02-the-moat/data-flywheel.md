@@ -28,7 +28,7 @@
 **What you capture today:**
 **How it compounds:**
 
-**Total Flywheel Score: 12__/20**
+**Total Flywheel Score: _12_/20**
 **Weakest Loop:**
 **Fix for weakest loop:**
 
