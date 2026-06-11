@@ -51,10 +51,10 @@ Referral programmes, community portfolio benchmarks ("investors like you"), or p
 **% of value at risk:**
 
 ### 2. Vertical Competitor
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Stanbic IBTC Investments + Meristem + CardinalStone Vector
+**Vector:** All three offer multi-asset investment platforms (equities, fixed income, mutual funds) through both web and mobile — directly mirroring Capital's proposition. CardinalStone and Meristem specifically serve the same SEC-registered, mid-to-high net worth retail and HNI investor segment that Capital is targeting. They also have longer track records and established trust with that segment. Time-to-threat: 0–3 months (all already live) % of 
+**Time-to-threat:** 0–3 months (all already live) 
+**% of value at risk:** 50%
 
 ### 3. Adjacent Expansion
 **Attacker:**
