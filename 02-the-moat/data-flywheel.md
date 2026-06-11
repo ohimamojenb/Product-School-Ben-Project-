@@ -45,22 +45,22 @@ Referral programmes, community portfolio benchmarks ("investors like you"), or p
 ## Encroachment Threat Assessment
 
 ### 1. Platform Encroachment
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
-
-### 2. Vertical Competitor
 **Attacker:** Stanbic IBTC Investments + Meristem + CardinalStone Vector
 **Vector:** All three offer multi-asset investment platforms (equities, fixed income, mutual funds) through both web and mobile — directly mirroring Capital's proposition. CardinalStone and Meristem specifically serve the same SEC-registered, mid-to-high net worth retail and HNI investor segment that Capital is targeting. They also have longer track records and established trust with that segment. Time-to-threat: 0–3 months (all already live) % of 
-**Time-to-threat:** 0–3 months (all already live) 
+**Time-to-threat:** 0–3 months (all already live) of %
 **% of value at risk:** 50%
 
+### 2. Vertical Competitor
+**Attacker:** Bamboo + Chaka + Afrinvest
+**Vector:** Bamboo and Chaka own the UX and onboarding experience — low friction, consumer-grade design, strong brand among younger investors. Afrinvest brings institutional research depth and stockbroking credibility. Together they attack Capital from two sides — the experience layer (Bamboo/Chaka) and the credibility/research layer (Afrinvest). Capital currently sits between both without fully owning either. 
+**Time-to-threat:** 3–6 months % 
+**% of value at risk:** 35%
+
 ### 3. Adjacent Expansion
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Paystack / MoMo / Moniepoint 
+**Vector:** They already own the payment relationship and have the user base. Adding a yield/savings product is a one-feature expansion for them.
+**Time-to-threat:** 6–12 months % 
+**% of value at risk:** 25%
 
 ---
 
