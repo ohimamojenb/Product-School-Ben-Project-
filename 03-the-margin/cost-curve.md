@@ -4,7 +4,7 @@
 
 | Cost Category | Per-User/Month | Notes |
 |--------------|----------------|-------|
-| Inference (primary model) | | |
+| KYC / Identity Verification (Prembly)| ₦225 – ₦375|Industry-average per-verification cost for BVN/NIN/CAC checks via providers like Prembly, amortized monthly assuming one verification per new user, spread across average customer lifetime |
 | Inference (cascading/triage) | | |
 | Infrastructure | | |
 | Data/storage | | |
