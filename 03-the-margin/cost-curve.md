@@ -5,33 +5,35 @@
 | Cost Category | Per-User/Month | Notes |
 |--------------|----------------|-------|
 | KYC / Identity Verification (Prembly)| ₦225 – ₦375|Industry-average per-verification cost for BVN/NIN/CAC checks via providers like Prembly, amortized monthly assuming one verification per new user, spread across average customer lifetime |
-| Inference (cascading/triage) | | |
-| Infrastructure | | |
-| Data/storage | | |
-| Human-in-the-loop | | |
-| **Total AI COGS** | | |
+| Market Data / Order Routing (NGX/Infoware) | ₦450 – ₦750|Estimated blended cost of live market data feed access and per-order routing fees, based on typical capital markets middleware pricing in Nigeria |
+| Wallet Funding / Transfers (NIBSS/NIP) | ₦75 – ₦150|NIBSS NIP transfer fees typically range ₦10–₦50 per transaction; averaged across an estimated 2–3 funding transactions per user/month |
+| Customer Engagement (MoEngage) |₦150 – ₦300 |Typical CDP/marketing automation pricing scales with monthly active users and message volume (push, email, SMS); mid-range estimate for a platform our size |
+| Data / Storage (Azure) |₦150 |Confirmed — $100/month flat ÷ 250 users = $0.40/user, converted at ₦1,500/$1 |
+| **Total AI COGS** |₦1,050 – ₦1,725 |Per user/month, based on industry-average estimates; actual figures require vendor contract confirmation |
 
 ## Cascading Strategy
-<!-- Cheap model → frontier model routing logic -->
+<!-- Cheap model → frontier model routing logic --> Not applicable in the traditional AI sense  Capital has no AI inference layer today, so there's no cheap-model-to-frontier-model routing happening.
+The closest equivalent concept that does exist in our build: MoEngage's rule-based triage, simple trigger-based notifications (failed transaction, idle balance) are handled by lightweight rule logic rather than anything resembling a "frontier model." If an AI layer were added later (e.g. ChurnGuard), this is where a triage model would sit, handling simple queries before escalating to a more expensive model.
 
-**Triage model:**
-**Frontier model:**
-**Routing rule:**
-**Expected cascade ratio:**
+
+**Triage model:** N/A today — would be a lightweight model handling simple classification (e.g., "is this customer at risk: yes/no") if AI were introduced
+**Frontier model:** N/A today — would handle the more nuanced "why" explanation behind a risk flag
+**Routing rule:** N/A — no AI routing exists in the current build
+**Expected cascade ratio:** N/A
 
 ## Pricing Model
 
-**Current pricing:**
-**Proposed AI pricing:**
-**Model:** seat-based / usage-based / outcome-based / hybrid
+**Current pricing:** Capital does not charge customers a separate platform/subscription fee. Revenue comes from transaction-based mechanisms, fees or spreads embedded in T-Bills, Commercial Papers, FGN Bond purchases, and equities trading, consistent with standard capital markets brokerage economics, priced and settled in Naira.
+**Proposed AI pricing:** Not applicable — no AI feature is live or monetized today. If a feature like ChurnGuard were introduced as an internal tool, it would not be customer-facing pricing at all; it would be an internal cost absorbed as part of platform operations, justified by improved retention rather than direct revenue.
+**Model:** N/A — current revenue model is transaction/fee-based, not seat, usage, or outcome-based in the way this template assumes for an AI product.
 
 ## Stress Tests
 
 | Scenario | Impact on Margin | Response |
 |----------|-----------------|----------|
-| Inference costs 3x | | |
-| Heaviest segment doubles | | |
-| Model provider raises prices 50% | | |
+| Inference costs 3x |Storage moves from ₦150 to ₦450/user/month — meaningful at 250 users, but dilutes quickly as user base scales, since Azure's flat base cost doesn't scale linearly with users |Revisit storage architecture efficiency; at scale (5,000+ users), even a 3x increase becomes immaterial per-user |
+| Heaviest segment doubles |NIBSS and NGX/Infoware per-transaction costs scale directly with this segment, increasing total COGS proportionally; margin impact depends on whether our transaction fee structure also scales with volume | Since revenue is also transaction-based, doubled volume should largely be margin-neutral or margin-positive, unlike a flat-fee AI cost structure would be|
+| Model provider raises prices 50% |Direct hit to COGS on whichever line item is affected — Infoware/NGX is the largest cost line, so a 50% increase there has the biggest absolute impact |This is exactly the scenario covered in our Kill Switch Audit — for Infoware specifically, our direct NGX integration gives us real negotiating leverage; for NIBSS, we have no fallback and would need to absorb cost or evaluate fee pass-through to customers |
 
 ## Board One-Pager
 <!-- Before/After: Old SaaS revenue vs. AI usage revenue for your product -->
