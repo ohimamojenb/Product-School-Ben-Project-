@@ -73,6 +73,8 @@ A simple referral mechanic is a well-understood, low-risk first move whenever we
 **Weeks 1-4 - what they ship:** OPay extends OWealth to include T-Bills and money market funds directly in the wallet. No new KYC needed, BVN/NIN already on file. Yield sits next to spendable balance in the same screen, making the offer feel immediate and tailored.
 **Weeks 5-8 - how they poach users:** Referral push: "Invite a friend, you both earn ₦1,000 + bonus yield." Idle-balance nudges target users directly: "Your balance has been sitting for 5 days, earn 18% instead." This plays directly into the Preference gap we've identified, and is the clearest argument for prioritizing the renewal-prompt fix soon.
 **Weeks 9-12 - why users don't come back:** Auto-reinvestment by default, unified view of spending + investment in one dashboard. A user who tried Capital and found the funding flow slower, with no follow-up nudge bringing them back, simply moves on, underscoring why even a simple win-back mechanism would have outsized value relative to its build cost.
+
+
 **Your defense:**
 Against OPay's wallet-embedded T-Bills, our defense is SEC-licensed, DCS exchange-settled trust — the one thing they structurally cannot replicate quickly. This is live today and remains our core moat.
 Against idle-balance personalised nudges, our defense is a rule-based renewal prompt using existing transaction data. We have a strong foundation in place already, so this is quick to build.
