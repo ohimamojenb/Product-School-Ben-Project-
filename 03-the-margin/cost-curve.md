@@ -38,6 +38,6 @@ The closest equivalent concept that does exist in our build: MoEngage's rule-bas
 ## Board One-Pager
 <!-- Before/After: Old SaaS revenue vs. AI usage revenue for your product -->
 
-**Before (traditional SaaS):**
-**After (AI-enabled):**
-**Net margin shift:**
+**Before (traditional SaaS):** Capital does not operate on a traditional SaaS revenue model today,  there is no subscription or seat fee. Revenue is transaction-based: fees and spreads embedded in T-Bills, Commercial Papers, FGN Savings Bonds, and equities trades. Revenue is directly tied to transaction volume and AUM, which means it's also directly exposed to churn, every customer who quietly stops investing (the gap our Preference Loop weakness leaves open) is lost revenue with no recurring floor underneath it.
+**After (AI-enabled):** If a feature like ChurnGuard were introduced, flagging at-risk customers before they go fully dormant, the revenue model itself wouldn't change (still transaction-based), but the retention curve underneath it would. Fewer customers going silent means more renewed T-Bills, more reinvested CP maturities, and a higher average AUM per retained customer over time. The AI layer here doesn't create a new revenue line; it defends the existing one by reducing silent attrition before it shows up in the numbers.
+**Net margin shift:** Minimal direct cost impact, ChurnGuard as scoped is a lightweight, rule-based-to-AI feature, not a heavy inference workload, so it doesn't meaningfully add to COGS (our Cost Model above shows no material AI cost today). The margin shift is on the revenue side, not the cost side: even a modest reduction in customer churn compounds directly into retained transaction fees and AUM, since we're not paying a SaaS-style cost to deliver this, we're paying a small operational cost to protect revenue that already exists but is currently leaking silently.
